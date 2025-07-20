@@ -1,0 +1,10 @@
+commit 837c576ee1f6967894e2018f39b635ff7b545a82
+tree 98b672811e56618e95500feaa9ca64eb046aeb6e
+parent 5c6b8430cf3f81afd7083580083a96e491c377a7
+author Praneeth76940 <baddipadigapraneeth77@gmail.com> 2025-07-20 13:18:55 -0700
+committer Praneeth76940 <baddipadigapraneeth77@gmail.com> 2025-07-20 13:18:55 -0700
+
+    Add playbook and inventory
+
+
+:000000 100644 0000000000000000000000000000000000000000 97ddc5541194dd24d6060a2f3be1e46d24ee7f6d A	router_config_playbook.yml

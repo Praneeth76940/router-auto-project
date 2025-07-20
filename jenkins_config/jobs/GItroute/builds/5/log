@@ -1,0 +1,43 @@
+Started by user [8mha:////4IzJo6+DobjmGqrXNDY5N6l5zWU75DjnyTX/vryZiqKyAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLEvNTUkoyi1JSUSgBQ1GRMyAAAAA==[0mPraneethreddy
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GItroute
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+using credential d995deda-8006-4347-88cc-bd06d533a08a
+Cloning the remote Git repository
+Cloning repository https://github.com/Praneeth76940/router-auto-project.git
+ > git init /var/lib/jenkins/workspace/GItroute # timeout=10
+Fetching upstream changes from https://github.com/Praneeth76940/router-auto-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/Praneeth76940/router-auto-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Praneeth76940/router-auto-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 837c576ee1f6967894e2018f39b635ff7b545a82 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 837c576ee1f6967894e2018f39b635ff7b545a82 # timeout=10
+Commit message: "Add playbook and inventory"
+ > git rev-list --no-walk 837c576ee1f6967894e2018f39b635ff7b545a82 # timeout=10
+[GItroute] $ /bin/sh -xe /tmp/jenkins11152034345190143558.sh
++ cd /var/lib/jenkins/workspace/GItroute
++ ansible-playbook -i inventory.ini router_config_playbook.yml
+
+PLAY [Configure Cisco router] **************************************************
+
+TASK [Set hostname and Loopback] ***********************************************
+fatal: [r3]: FAILED! => {"changed": false, "msg": "paramiko: The authenticity of host '192.168.42.3' can't be established.\nThe ssh-rsa key fingerprint is b'f5ce0821e4e3a6932091645fa151fee7'."}
+fatal: [r2]: FAILED! => {"changed": false, "msg": "paramiko: The authenticity of host '192.168.42.2' can't be established.\nThe ssh-rsa key fingerprint is b'5d1a7f1804f42e5a3f812a54643c06ac'."}
+fatal: [r1]: FAILED! => {"changed": false, "msg": "paramiko: The authenticity of host '192.168.42.1' can't be established.\nThe ssh-rsa key fingerprint is b'2578fbe1893edf992ac3e1b51d1d812d'."}
+
+PLAY RECAP *********************************************************************
+r1                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+r2                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+r3                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

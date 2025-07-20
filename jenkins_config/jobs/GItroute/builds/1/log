@@ -1,0 +1,29 @@
+Started by user [8mha:////4IzJo6+DobjmGqrXNDY5N6l5zWU75DjnyTX/vryZiqKyAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLEvNTUkoyi1JSUSgBQ1GRMyAAAAA==[0mPraneethreddy
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GItroute
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+The recommended git tool is: NONE
+using credential d995deda-8006-4347-88cc-bd06d533a08a
+Cloning the remote Git repository
+Cloning repository https://github.com/Praneeth76940/router-auto-project.git
+ > git init /var/lib/jenkins/workspace/GItroute # timeout=10
+Fetching upstream changes from https://github.com/Praneeth76940/router-auto-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/Praneeth76940/router-auto-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Praneeth76940/router-auto-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 5c6b8430cf3f81afd7083580083a96e491c377a7 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5c6b8430cf3f81afd7083580083a96e491c377a7 # timeout=10
+Commit message: "Initial Ansible playbook and inventory added"
+First time build. Skipping changelog.
+[GItroute] $ /bin/sh -xe /tmp/jenkins6318376083278370447.sh
++ ansible-playbook your_playbook.yml
+ERROR! the playbook: your_playbook.yml could not be found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
