@@ -176,7 +176,9 @@ network-automation-lab/
 - Integrate monitoring tools (e.g., Nagios or Prometheus)
 - Implement role-based access control for Jenkins jobs
 
-
+🙋‍♂ Author
+Praneeth Reddy – Network Engineer
+🔗 GitHub | LinkedIn
 
 
 
