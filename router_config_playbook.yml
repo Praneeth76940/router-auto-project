@@ -1,0 +1,12 @@
+- name: Configure Cisco router
+  hosts: routers
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+    - name: Set hostname and Loopback
+      ios_config:
+        lines:
+          - hostname JenkinsRouter
+          - interface Loopback0
+          - ip address 10.0.0.1 255.255.255.0
